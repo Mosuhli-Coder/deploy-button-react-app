@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -7,7 +6,7 @@ function App() {
   const newButtonColor = buttonColor === 'red' ? 'blue' : 'red';
 
   return (
-    <div >
+    <div className="App">
       <button 
         style={{backgroundColor: buttonColor}}
         onClick={() => setButtonColor(newButtonColor)}>
